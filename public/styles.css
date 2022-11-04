@@ -1,37 +1,93 @@
+* {
+  margin: 0;
+}
+
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: #213e6d;
+  font-family: Inter, sans-serif;
 }
 .form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 30vw;
-  background-color: #58338d;
-  color: white;
+  background-color: rgb(244, 244, 255);
   text-decoration: none;
-  border-radius: 20px;
-  border: 4px solid #00000029;
+  border-radius: 5px;
+  border: none;
+}
+.form-container:hover {
+  box-shadow: 0px 0px 74px -17px rgba(7, 0, 100, 0.46);
+  -webkit-box-shadow: 0px 0px 74px -17px rgba(7, 0, 100, 0.46);
+  -moz-box-shadow: 0px 0px 74px -17px rgba(7, 0, 100, 0.46);
 }
 .form-container h1 {
-  font-size: 2em;
+  font-size: 25px;
+  margin: 10px;
+}
+.form-container h2 {
+  font-size: 20px;
+  margin: 10px;
 }
 .form {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  padding: 3vh;
 }
 .form input {
   margin: 1vh 0;
+  border-radius: 5px;
+  border: 1px solid #93939375;
+}
+.form input:hover {
+  box-shadow: 0px 0px 10px 2px rgba(128, 128, 128, 0.18);
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(128, 128, 128, 0.18);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(128, 128, 128, 0.18);
 }
 .form button {
-  border-radius: 10px;
-  border: none;
   margin: 2vh;
+  align-items: center;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-size: 16px;
+  font-weight: 600;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -0.8px;
+  line-height: 24px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.form button:focus {
+  color: #171e29;
 }
 .form button:hover {
-  background-color: rgb(255, 255, 161);
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+.form button:active {
+  border-color: #06f;
+  color: #06f;
+  fill: #06f;
+}
+@media (min-width: 768px) {
+  .form button {
+    min-width: 170px;
+  }
 }
